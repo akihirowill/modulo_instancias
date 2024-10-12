@@ -24,9 +24,3 @@ resource "aws_instance" "web" {
     Plataforma = data.aws_ami.ubuntu.platform_details
   }
 }
-
-resource "aws_default_vpc" "default" {
-  tags = {
-    Name = "Default VPC"
-  }
-}
